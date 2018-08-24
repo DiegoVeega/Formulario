@@ -27,13 +27,13 @@
 			<legend>Account.(Requerido)</legend>
 
 			<label for="email">E-mail: </label>
-			<input type="email" name="email" id="email" placeholder="PedroPablo@formulario.com" size="33em" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+			<input type="email" name="email" id="email" placeholder="PedroPablo@formulario.com" size="33em" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Ingrese correo valido con sigiente formato: PedroPablo@formulario.com" required>
 			<br><br>
 			<label for="pass">Password:</label>
-			<input type="Password" name="pass" id="pass" size="30em" placeholder="Password" required>
+			<input type="Password" name="pass" id="pass" size="30em" placeholder="Password" pattern=".{8,10}" title="De 8 a 10 caracteres" required>
 			<br><br>
 			<label for="Vpass"> Verify Password:</label>
-			<input type="Password" name="vpass" id="Vpass" size="23em" placeholder="Password" required="Hey requeridooo">
+			<input type="Password" name="vpass" id="Vpass" size="23em" placeholder="Password" pattern=".{8,10}" title="De 8 a 10 caracteres" required="Ingresa tu contrase;a nuevamente">
 		</fieldset>
 		<fieldset>
 			<legend>Contact.</legend>
@@ -48,7 +48,7 @@
 			<input type="text" name="pais" id="pais" size="28em" placeholder="El Salvador">
 			<br><br>
 			<label for="telefono">Phone Number: </label>
-			<input type="tel" name="telefono" id="telefono" size="21em" placeholder="(001) 1234-5678">
+			<input type="tel" name="telefono" id="telefono" size="21em" pattern="[0-9]{4}-[0-9]{4}" placeholder="1234-5678" title="Ingrese unicamente numeros" required>
 		</fieldset>
 		<br><br>
 		<input type="submit" value="Send.(Enviar)">

@@ -7,51 +7,57 @@
 <body>
 	<form action="#" method="post">
 		<fieldset>
-			<legend>Personal.</legend>
+			<legend>Categorias.</legend>
+			<br>
+			<fieldset>
+				<legend>Personal.</legend>
 
-			<label for="name">Name: </label>
-			<input type="text" name="name" id="name" placeholder="Pedro Pablo" size="28em">
-			<br><br>
-			<label for="fechaN">Date of Birthday: </label>
-			<input type="Date" name="fechaN">
-			<br><br>
-			<label for="select" >Favorite Animal: </label>
-			<select id="select" name="select">
-				<option>Perro.</option>
-				<option>Gato.</option>
-				<option>Pajarito.</option>
-				<option>Tortuga.</option>
-			</select>
-		</fieldset>
-		<fieldset>
-			<legend>Account.(Requerido)</legend>
+				<label for="name">Name: </label>
+				<input type="text" name="name" id="name" placeholder="Pedro Pablo" size="28em">
+				<br><br>
+				<label for="fechaN">Date of Birthday: </label>
+				<input type="Date" name="fechaN">
+				<br><br>
+				<label for="select" >Favorite Animal: </label>
+				<select id="select" name="select">
+					<option>Perro.</option>
+					<option>Gato.</option>
+					<option>Pajarito.</option>
+					<option>Tortuga.</option>
+				</select>
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>Account. (Requerido)</legend>
 
-			<label for="email">E-mail: </label>
-			<input type="email" name="email" id="email" placeholder="PedroPablo@formulario.com" size="33em" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Ingrese correo valido con sigiente formato: PedroPablo@formulario.com" required>
-			<br><br>
-			<label for="pass">Password:</label>
-			<input type="Password" name="pass" id="pass" size="30em" placeholder="Password" pattern=".{8,10}" title="De 8 a 10 caracteres" required>
-			<br><br>
-			<label for="Vpass"> Verify Password:</label>
-			<input type="Password" name="vpass" id="Vpass" size="23em" placeholder="Password" pattern=".{8,10}" title="De 8 a 10 caracteres" required="Ingresa tu contrase;a nuevamente">
-		</fieldset>
-		<fieldset>
-			<legend>Contact.</legend>
+				<label for="email">E-mail: </label>
+				<input type="email" name="email" id="email" placeholder="PedroPablo@formulario.com" size="33em" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Ingrese correo valido con sigiente formato: PedroPablo@formulario.com" required>
+				<br><br>
+				<label for="pass">Password:</label>
+				<input type="Password" name="pass" id="pass" size="30em" placeholder="Password" pattern=".{8,10}" title="De 8 a 10 caracteres" required>
+				<br><br>
+				<label for="Vpass"> Verify Password:</label>
+				<input type="Password" name="vpass" id="Vpass" size="23em" placeholder="Password" pattern=".{8,10}" title="De 8 a 10 caracteres" required="Ingresa tu contrase;a nuevamente">
+			</fieldset>
+			<br>
+			<fieldset >
+				<legend>Contact.</legend>
 
-			<label for="dir">Address: </label>
-			<input type="text" name="dir" id="dir" size="28em" placeholder="Calle Caverna, 2da Avenida Tomate #123A-Z.">
-			<br><br>
-			<label for="city">City: </label>
-			<input type="text" name="city" id="city" size="32em" placeholder="Computadora City.">
-			<br><br>
-			<label for="pais">Country: </label>
-			<input type="text" name="pais" id="pais" size="28em" placeholder="El Salvador">
-			<br><br>
-			<label for="telefono">Phone Number: </label>
-			<input type="tel" name="telefono" id="telefono" size="21em" pattern="[0-9]{4}-[0-9]{4}" placeholder="1234-5678" title="Ingrese unicamente numeros" required>
+				<label for="dir">Address: </label>
+				<input type="text" name="dir" id="dir" size="28em" placeholder="Calle Caverna, 2da Avenida Tomate #123A-Z.">
+				<br><br>
+				<label for="city">City: </label>
+				<input type="text" name="city" id="city" size="32em" placeholder="Computadora City.">
+				<br><br>
+				<label for="pais">Country: </label>
+				<input type="text" name="pais" id="pais" size="28em" placeholder="El Salvador">
+				<br><br>
+				<label for="telefono">Phone Number: </label>
+				<input type="tel" name="telefono" id="telefono" size="21em" pattern="[0-9]{4}-[0-9]{4}" placeholder="1234-5678" title="Ingrese unicamente numeros" required>
+			</fieldset>
+			<br>
+			<input type="submit" value="Send.(Enviar)">
 		</fieldset>
-		<br><br>
-		<input type="submit" value="Send.(Enviar)">
 	</form>
 </body>
 </html>
